@@ -1,2 +1,2 @@
 # SSM
-A secure message system
+A Secure Message System
