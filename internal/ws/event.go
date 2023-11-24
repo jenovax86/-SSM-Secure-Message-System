@@ -1,4 +1,4 @@
-package network
+package ws
 
 import "encoding/json"
 

@@ -2,7 +2,7 @@ package main
 
 import (
 	"ssm/internal/blockchain"
-	"ssm/internal/network"
+	"ssm/internal/ws"
 )
 
 func main() {
@@ -10,7 +10,7 @@ func main() {
 	servers.AddBlock("127.1.1.1")
 	servers.AddBlock("8.8.8.8")
 
-	server := network.NewServer()
+	server := ws.NewServer()
 	if err := server.ListenAndServe(3000); err != nil {
 		panic(err)
 	}
